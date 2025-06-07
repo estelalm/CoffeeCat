@@ -1,0 +1,86 @@
+@import url("../../utils/variaveis.css");
+
+body{
+  display: grid;
+  grid-template-rows: 100px 1fr 100px;
+  height: 100vh;
+}
+
+.bg-pink {
+  background-color: var(--pink) !important;
+}
+
+.bg-light-pink {
+  background-color: var(--light-pink) !important;
+}
+
+.bg-light-pink2 {
+  background-color: var(--light-pink2) !important;
+}
+
+.bg-pink2 {
+  background-color: var(--pink2) !important;
+}
+
+.bg-pink3 {
+  background-color: var(--pink3) !important;
+}
+
+.bg-brown {
+  background-color: var(--brown) !important;
+}
+
+.text-pink {
+  color: var(--pink);
+}
+
+.btn-pink {
+  background-color: var(--pink);
+  color: white;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+
+.btn-pink:hover {
+  background-color: var(--pink2);
+  color: white;
+}
+
+.color-box {
+  width: 60px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+
+.carousel-image {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-gato-1 {
+  background-image: url('https://stage.optimumpet.com.br/media/uploads/2023/05/anos-vive-gato-01-1024x683.webp');
+}
+
+.bg-gato-2 {
+  background-image: url('https://chefbob.com.br/wp-content/uploads/2021/05/2021-05-12-como-deixar-os-gatos-mais-tranquilos.jpg');
+}
+
+.bg-gato-3 {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcVUoJhZJhNVfK3NuSky8ln8kirSnBliRGLw&s');
+}
+
+.decoration{
+  width: 100vw;
+  height: 40px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.ver-cardapio{
+  display: grid;
+}
+
