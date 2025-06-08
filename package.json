@@ -1,0 +1,23 @@
+{
+  "name": "coffee-cat-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estelalm/CoffeeCat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/estelalm/CoffeeCat/issues"
+  },
+  "homepage": "https://github.com/estelalm/CoffeeCat#readme",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.6",
+    "sweetalert2": "^11.22.0"
+  }
+}

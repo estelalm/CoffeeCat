@@ -47,11 +47,16 @@ body{
   background-color: var(--pink2);
   color: white;
 }
+.column{
+  gap: 12px;
+  display: grid;
+  grid-template-rows: 80% 20%;
+  height: 150px;
+}
 
 .color-box {
-  width: 60px;
-  height: 40px;
-  border-radius: 10px;
+  border-radius: 12px;
+  width: 100%;
 }
 
 
