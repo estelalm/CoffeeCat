@@ -47,6 +47,17 @@ body{
   background-color: var(--pink2);
   color: white;
 }
+nav{
+  height: 100%;
+}
+
+.main-text .description{
+  font-size: 1.3rem;
+}
+.main-text a{
+  font-size: 1.6rem;
+  width: 90%;
+}
 .column{
   gap: 12px;
   display: grid;
@@ -85,7 +96,17 @@ body{
   border-bottom-right-radius: 100px;
 }
 
+
 .ver-cardapio{
   display: grid;
+  height: 240px;
+  grid-template-rows: 80% 20%;
+  border: solid 1px var(--light-pink2);
+
+}
+.ver-cardapio:hover{
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+  background-color: rgba(255, 128, 223, 0.246);
 }
 

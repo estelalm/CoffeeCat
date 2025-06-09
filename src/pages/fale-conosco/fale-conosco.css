@@ -1,0 +1,76 @@
+    
+    @import url("../../utils/variaveis.css");
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+body{
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  height: 100vh;
+}
+
+.bg-pink {
+  background-color: var(--pink) !important;
+}
+
+.bg-light-pink {
+  background-color: var(--light-pink) !important;
+}
+
+.bg-light-pink2 {
+  background-color: var(--light-pink2) !important;
+}
+
+.bg-pink2 {
+  background-color: var(--pink2) !important;
+}
+
+.bg-pink3 {
+  background-color: var(--pink3) !important;
+}
+
+.bg-brown {
+  background-color: var(--brown) !important;
+}
+
+.text-pink {
+  color: var(--pink);
+}
+
+.btn-pink {
+  background-color: var(--pink);
+  color: white;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+
+.btn-pink:hover {
+  background-color: var(--pink2);
+  color: white;
+}
+nav{
+  height: 100%;
+}
+
+    .form-container {
+      background-color: #ffd9ec; /* Rosa claro */
+      padding: 30px;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 600px;
+    }
+    .btn-custom {
+      background-color: #ff3399;
+      color: white;
+    }
+    .btn-custom:hover {
+      background-color: #e60073;
+    }
+    label {
+      font-weight: 500;
+    }
