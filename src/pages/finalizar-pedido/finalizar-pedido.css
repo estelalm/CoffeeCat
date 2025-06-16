@@ -1,0 +1,128 @@
+@import url("../../utils/variaveis.css");
+
+body {
+  background-color: var(--light-pink);
+  display: grid;
+  grid-template-rows: 100px 1fr;
+}
+
+/* Header */
+.navbar {
+  height: 100%;
+}
+
+.navbar-brand img {
+  height: 40px;
+  margin-right: 8px;
+}
+
+.navbar .nav-link {
+  color: #000;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: var(--pink2);
+}
+
+.btn-pink {
+  background-color: var(--pink);
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-pink:hover {
+  background-color: var(--pink2);
+}
+
+.cart-login .nav-link {
+  margin-right: 1rem;
+  font-size: 1.4rem;
+  color: #000;
+}
+
+.cart-login .btn {
+  margin-left: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+main{
+    height: 100%;
+    
+}
+
+main .form-label {
+  font-weight: 600;
+}
+
+main textarea {
+  resize: none;
+  border: 1px solid var(--pink);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+main textarea:focus {
+  border-color: var(--pink2);
+  box-shadow: 0 0 0 0.2rem rgba(231, 84, 160, 0.25);
+}
+
+.border-pink {
+  border: 1px solid var(--pink);
+}
+
+.bg-light-pink2 {
+  background-color: var(--light-pink2);
+}
+
+.bg-light-pink {
+  background-color: var(--light-pink);
+}
+
+.rounded {
+  border-radius: 1rem !important;
+}
+
+.shadow-sm {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Formas de pagamento */
+main .form-check-input {
+  accent-color: var(--pink);
+  transform: scale(1.3);
+  margin-right: 5px;
+}
+
+main .form-check-input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(231, 84, 160, 0.25);
+}
+
+/* Botão Pedir */
+main .btn-pink {
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .cart-login {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+
+  main .btn-pink {
+    width: 100% !important;
+  }
+}

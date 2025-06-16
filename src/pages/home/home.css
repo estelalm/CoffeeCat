@@ -51,6 +51,10 @@ nav{
   height: 100%;
 }
 
+nav ul li a:hover{
+  color: white !important;
+}
+
 .main-text .description{
   font-size: 1.3rem;
 }
@@ -58,6 +62,7 @@ nav{
   font-size: 1.6rem;
   width: 90%;
 }
+
 .column{
   gap: 12px;
   display: grid;
@@ -78,11 +83,11 @@ nav{
 }
 
 .bg-gato-1 {
-  background-image: url('https://stage.optimumpet.com.br/media/uploads/2023/05/anos-vive-gato-01-1024x683.webp');
+  background-image: url('../../public/assets/cat1.png');
 }
 
 .bg-gato-2 {
-  background-image: url('https://chefbob.com.br/wp-content/uploads/2021/05/2021-05-12-como-deixar-os-gatos-mais-tranquilos.jpg');
+  background-image: url('../../public/assets/banner1.png');
 }
 
 .bg-gato-3 {
@@ -102,6 +107,7 @@ nav{
   height: 240px;
   grid-template-rows: 80% 20%;
   border: solid 1px var(--light-pink2);
+  cursor: pointer;
 
 }
 .ver-cardapio:hover{
@@ -110,3 +116,7 @@ nav{
   background-color: rgba(255, 128, 223, 0.246);
 }
 
+.cart-login{
+  font-size: 1.4rem;
+  gap: 24px;
+}

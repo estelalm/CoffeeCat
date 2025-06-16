@@ -1,0 +1,47 @@
+
+
+.hidden{
+  display: none;
+}
+
+.bg-pink {
+  background-color: var(--pink) !important;
+}
+
+.bg-light-pink {
+  background-color: var(--light-pink) !important;
+}
+
+.bg-light-pink2 {
+  background-color: var(--light-pink2) !important;
+}
+
+.bg-pink2 {
+  background-color: var(--pink2) !important;
+}
+
+.bg-pink3 {
+  background-color: var(--pink3) !important;
+}
+
+.bg-brown {
+  background-color: var(--brown) !important;
+}
+
+.text-pink {
+  color: var(--pink);
+}
+
+.btn-pink {
+  background-color: var(--pink);
+  color: white;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+
+.btn-pink:hover {
+  background-color: var(--pink2);
+  color: white;
+}

@@ -13,15 +13,16 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
     />
+    <script src="./home.js"></script>
   </head>
   <body class="bg-light-pink">
     <header>
       <nav
         class="navbar navbar-expand-lg navbar-light bg-light-pink2 shadow-sm"
       >
-        <div class="container">
-          <a class="navbar-brand fw-bold text-dark" href="#"
-            ><i class="bi bi-cup-hot-fill me-2"></i>CofeeCat</a
+        <div class="container justify-content-around">
+          <a class="navbar-brand fw-bold text-dark" href="./home.html"
+            ><img src="../../public/assets/logo.svg" alt="">CofeeCat</a
           >
           <button
             class="navbar-toggler"
@@ -32,32 +33,32 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-end"
+            class="collapse navbar-collapse justify-content-around"
             id="navbarNav"
           >
             <ul class="navbar-nav align-items-center">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="./home.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sobre nós</a>
+                <a class="nav-link" href="../sobre-nos/sobre-nos.html">Sobre nós</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../fale-conosco/fale-conosco.html">Fale conosco</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Cardápio</a>
+                <a class="nav-link" href="../cardapio//cardapio.html">Cardápio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link position-relative" href="#"
-                  ><i class="bi bi-cart"></i
-                ></a>
-              </li>
-              <li class="nav-item ms-2">
-                <a class="btn btn-pink" href="#">Login</a>
-              </li>
+
             </ul>
           </div>
+            <div class="d-flex align-items-center cart-login">
+               <a class="nav-link position-relative" href="#"
+                  ><i class="bi bi-cart"></i
+                ></a>
+                <a class="btn btn-pink" href="../login/login.html">Login</a>
+                <a class="btn btn-pink hidden" href="../perfil/perfil.html"><i class="bi bi-person-fill"></i> Perfil</a>
+            </div>
         </div>
       </nav>
     </header>
@@ -115,14 +116,14 @@
               Uma cafeteria temática feita para quem ama bons momentos, sabores
               incríveis e, claro... <strong>gatos!</strong>
             </p>
-            <a href="#" class="btn btn-pink">Venha nos visitar</a>
+            <a href="../sobre-nos/sobre-nos.html" class="btn btn-pink">Venha nos visitar</a>
           </div>
-          <div class="ver-cardapio container p-3 rounded shadow-sm">
+          <div class="ver-cardapio container p-3 rounded shadow-sm" onclick="navigate('../cardapio/cardapio.html')">
             <div class="row">
               <div class="col-sm column">
                 <div class="color-box color-box-large bg-brown"></div>
                 <div class="color-box color-box-small bg-pink3"></div>
-              </div>
+              </div>                                     
               <div class="col-sm column">
                 <div class="color-box color-box-large bg-light-pink2"></div>
                 <div class="color-box color-box-small bg-pink2"></div>
