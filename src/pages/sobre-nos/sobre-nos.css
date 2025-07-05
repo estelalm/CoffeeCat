@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-size: 1.3rem;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(to bottom, #ff66b2, #ffb6d2);
+    color: #050202;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem 1rem;
+}
+
+section {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+section img {
+    width: 260px;
+    border-radius: 20px;
+    margin-top: 1rem;
+}
+
+.titulo-bloco {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.loved,
+.titulo-grande {
+    font-family: 'Loved by the King', cursive;
+    color: #350303d0;
+    text-shadow:
+        0 0 3px #ffb6d2,
+        0 0 8px #ff66b2,
+        2px 2px 2px #690526;
+    margin: 0;
+}
+
+.loved {
+    font-size: 60px;
+}
+
+.titulo-grande {
+    font-size: 70px;
+}
+
+.paragrafo {
+    max-width: 600px;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+    /* font-size: 32px; */
+    font-weight: 600;
+    line-height: 1.4;
+    color: #4e1c1c;
+}
+
+.valores p {
+    margin: 0.5rem 0;
+    font-family: 'Lato', sans-serif;
+    /* font-size: 32px; */
+    font-weight: 600;
+    color: #4e1c1c;
+}
+
+.apoio {
+    /* font-size: 32px; */
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: auto;
+    color: #4e1c1c;
+}
+
+@media (max-width: 600px) {
+    section img {
+        width: 90%;
+    }
+
+    .titulo-grande {
+        /* font-size: 60px; */
+    }
+}
+
+.flex-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.flex-direita .texto {
+    order: 1;
+    text-align: left;
+}
+
+.flex-direita .imagem {
+    order: 2;
+}
+
+.flex-esquerda .imagem {
+    order: 1;
+}
+
+.flex-esquerda .texto {
+    order: 2;
+    text-align: right;
+}
+
+.imagem {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.texto {
+    flex: 1;
+    font-family: 'Lato', sans-serif;
+    /* font-size: 32px; */
+    font-weight: 600;
+    color: #4e1c1c;
+}
+
+img[alt="sublinhado"] {
+    margin-top: -1cm !important;
+}
+
+.sublinhado-especial {
+    width: 200px;
+    height: auto;
+    margin-top: 2.5cm;
+}
