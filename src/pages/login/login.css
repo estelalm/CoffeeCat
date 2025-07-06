@@ -1,0 +1,51 @@
+@import url(../../utils/variaveis.css);
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.bg-lightpink {
+  background-color: #FFEEF2;
+}
+
+.btn-pink {
+  background-color: #ff4dc0;
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+.btn-pink:hover {
+  background-color: #ED2985;
+}
+
+.left-side {
+  width: 100%;
+  position: relative;
+  background-color: #ffeef7;
+  padding: 20px;
+  height: 100vh;
+}
+
+.right-side {
+  width: 100%;    
+  background-color: #fff0f6;
+  padding: 40px 20px;
+}
+
+.custom-input {
+  background-color: #ccc;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cat-img {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 450px;
+   height: auto;
+}
+
+
