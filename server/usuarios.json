@@ -4,5 +4,17 @@
     "telefone": "11948586077",
     "email": "juliasantos@gmail.com",
     "senha": "juliasantos"
+  },
+  {
+    "nome": "Ingrid Nascimento",
+    "telefone": "11948586077",
+    "email": "ingridnascimento@gmail.com",
+    "senha": "ingrid"
+  },
+  {
+    "nome": "Teste teste ",
+    "telefone": "11999999999",
+    "email": "teste@gmail.com",
+    "senha": "testeteste"
   }
 ]

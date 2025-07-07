@@ -2,13 +2,13 @@ const express = require('express');
 const fs = require('fs');
 const cors = require('cors');
 
+app.use(express.json());
 const app = express();
 app.use(cors());
-app.use(express.json());
+
 
 const ARQUIVO_PATH= './usuarios.json';
 
-// Função para ler os dados do arquivo
 function lerUsuarios() {
   try {
     const data = fs.readFileSync(ARQUIVO_PATH, 'utf8');
@@ -18,13 +18,11 @@ function lerUsuarios() {
   }
 }
 
-// Função para salvar os dados no arquivo
 function salvarUsuarios(usuarios) {
   fs.writeFileSync(ARQUIVO_PATH, JSON.stringify(usuarios, null, 2));
 }
 
-// POST /cadastro
-app.post('/cadastro', (req, res) => {
+app.post('/1.0/coffeecat/usuario', (req, res) => {
   const { nome, telefone, email, senha } = req.body;
 
   if (!nome || !telefone || !email || !senha) {
@@ -42,8 +40,7 @@ app.post('/cadastro', (req, res) => {
   res.status(201).json({ message: 'Usuário cadastrado com sucesso!' });
 });
 
-// POST /login
-app.post('/login', (req, res) => {
+app.post('/1.0/coffeecat/login', (req, res) => { 
   const { email, senha } = req.body;
   const usuarios = lerUsuarios();
   const usuario = usuarios.find(u => u.email === email && u.senha === senha);
@@ -55,13 +52,11 @@ app.post('/login', (req, res) => {
   res.json({ message: 'Login bem-sucedido!' });
 });
 
-// GET /usuarios
 app.get('/usuarios', (req, res) => {
   const usuarios = lerUsuarios();
   res.json(usuarios);
 });
 
-// Inicializa servidor
 app.listen(8080, () => {
   console.log('Servidor rodando na porta 8080');
 });
