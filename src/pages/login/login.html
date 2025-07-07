@@ -27,13 +27,13 @@
 
       <h2 class="fw-bold mb-4">Olá! Seja bem-vindo</h2>
 
-      <form class="w-100" style="max-width: 350px;">
+      <form id="formLogin" class="w-100" style="max-width: 350px;">
 
         <div class="input-group mb-2 custom-input">
           <span class="input-group-text bg-white border-0">
             <img src= "../../public/assets/fi-rr-envelope.png" alt= "Envelope" class= "fi-rr-envelope.png">
           </span>
-          <input type="email" class="form-control border-0" placeholder="Digite seu e-mail" required>
+          <input type="email" id="emailLogin" class="form-control border-0" placeholder="Digite seu e-mail" required>
         </div>
 
 
@@ -41,7 +41,7 @@
           <span class="input-group-text bg-white border-0">
             <img src="../../public/assets/fi-rr-key.png" alt="fi-rr-key" class="fi-rr-key">
           </span>
-          <input type="password" class="form-control border-0" placeholder="Digite sua senha" required>
+          <input type="password" id="senhaLogin" class="form-control border-0" placeholder="Digite sua senha" required>
         </div>
 
         <button type="submit" class="btn btn-pink w-100 rounded-pill py-2 fw-semibold">
@@ -56,5 +56,38 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+  document.getElementById('formLogin').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const email = document.getElementById('emailLogin').value;
+    const senha = document.getElementById('senhaLogin').value;
+
+    const dados = { email, senha };
+
+    try {
+      const response = await fetch('http://localhost:8080/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(dados)
+      });
+
+      const resultado = await response.json();
+
+      if (response.ok) {
+        alert(resultado.message);
+        // ✅ Redirecionar após login
+        window.location.href = '../home/home.html'; // ajuste o caminho se necessário
+      } else {
+        alert(resultado.error || 'Erro ao fazer login');
+      }
+    } catch (erro) {
+      console.error(erro);
+      alert('Erro ao conectar com o servidor');
+    }
+  });
+</script>
+
 </body>
 </html>
