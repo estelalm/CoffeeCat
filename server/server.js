@@ -2,8 +2,8 @@ const express = require('express');
 const fs = require('fs');
 const cors = require('cors');
 
-app.use(express.json());
 const app = express();
+app.use(express.json());
 app.use(cors());
 
 
@@ -23,9 +23,9 @@ function salvarUsuarios(usuarios) {
 }
 
 app.post('/1.0/coffeecat/usuario', (req, res) => {
-  const { nome, telefone, email, senha } = req.body;
+  const { nome, telefone, email, cep, rua, numero, bairro, cidade, estado,senha } = req.body;
 
-  if (!nome || !telefone || !email || !senha) {
+  if (!nome || !telefone || !email ||!cep || !rua || !numero || !bairro || !cidade || !estado || !senha) {
     return res.status(400).json({ error: 'Preencha todos os campos.' });
   }
 
@@ -34,7 +34,7 @@ app.post('/1.0/coffeecat/usuario', (req, res) => {
     return res.status(400).json({ error: 'Email já cadastrado.' });
   }
 
-  usuarios.push({ nome, telefone, email, senha });
+  usuarios.push({ nome, telefone, email, cep, rua, numero, bairro, cidade, estado, senha });
   salvarUsuarios(usuarios);
 
   res.status(201).json({ message: 'Usuário cadastrado com sucesso!' });

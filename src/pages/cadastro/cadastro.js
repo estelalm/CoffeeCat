@@ -2,6 +2,12 @@ const usuario = {
   nome: " ",
   telefone: " ",
   email: " ",
+  cep:" ",
+  rua: " ",
+  numero: " ",
+  bairro: " ",
+  cidade: " ", 
+  estado: " ",
   senha: " "
 };
 
